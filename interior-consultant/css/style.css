@@ -19,6 +19,7 @@ font-family: 'Montserrat', sans-serif; */
 
 }
 
+
 body {
     background-color: var(--Black-clr);
     font-family: 'Montserrat', sans-serif;
@@ -73,8 +74,9 @@ span{
     color: var(--White-clr);
     font-size: 0.875rem;
     line-height: var(--Line-height);
-    max-width: 60%;
-    margin: 0.75rem;   
+    max-width: 200px;
+    margin: 0.75rem; 
+     
 }
 
 .btn{
@@ -89,60 +91,145 @@ span{
     position: relative;
     top: 8px;    
 }
+
 .banner-bg{
     margin: 0.75rem;
-    position: relative;
+    /* position: relati ve;  */
 }
 
 
-.over-image-content{
-    background-color: var(--Black-clr);
-    width: 75%;
-    /* padding: 0.732em 0.46em; */
-    position: absolute;
-    bottom: 80px;
-    left: 65px;
+.over-section{
+    background: var(--Black-clr);
+    width: 330px;
+    padding: .5em 1em;
+    -webkit-box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
 
+      
 }
-.over-items{
+
+.intrperson-info{
     display: flex;
     flex-flow: row nowrap;
-    /* justify-content: space-between; */
-    /* padding: 0.64em 0.4575em; */
+    
 }
-.img-interior-person{
-    max-width: 25%;
-    margin: 1.25em;
+.over-img{
+ 
+    width: 20%;
+    padding: .5em .25em;
 }
-.img-interior-person img{
-    border-radius:50%;
+.over-img img{
+    border-radius: 50%;  
 }
-.interior-person{
-    /* margin: 1.5rem 0 0 1rem ; */
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+.intr-person{
+    margin:  1rem .5rem;
 }
-.interior-person li {
-    text-transform: uppercase;
+.intr-person li:first-child{
     font-size: 0.75rem;
-    font-weight: 500;
     color: var(--White-clr);
+    font-weight: 500;
+    line-height: var(--Line-height);
 }
-.interior-person li:last-child{
+.intr-person li:last-child{
     color: var(--Gray-clr);
     font-size: 0.625rem;
+    font-weight: 500;
 }
 .over-title{
     color: var(--White-clr);
     font-family: 'Lora', serif;
-    font-weight: 700;
     font-size: 1.125rem;
-    /* padding: 1.5625rem 1.1875rem ; */
-    /* padding: .5rem  1rem; */
-    padding-left: 1rem; ;
-    padding-bottom: 1.5rem;
+    font-weight: 700;
+    padding: 0 1.1875rem 0.5rem  ;
+    line-height: var(--Line-height);
 }
+ .banner-content{
+     display: flex;
+     flex-flow: column nowrap;
+ }
+ .over-section{
+     margin-left: 55px; 
+     margin-top: -60px;
+ }
+ .ft-text{
+     text-align: center;
+     color: var(--Gray-clr);
+     font-size: 0.875rem;
+     font-weight: 700;
+     margin: 2.75em 0 1em;
+    
+ }
+  .ft-text a{
+      color: var(--Gray-clr);
+  }
+
+ @media (min-width:555px){
+     html{
+         font-size: 1.25rem;
+     }
+     .banner-desc{
+         max-width: 300px;
+     }
+ }
+ @media (min-width: 750px){
+     .banner-desc{
+         max-width: 350px;
+     }
+     .over-section{
+         margin-left: 55%;
+     }
+ }
+ @media (min-width:900px){
+     .banner-desc{
+         max-width: 450px;
+     }
+ }
+ @media (min-width:1000px){
+     .banner-desc{
+         max-width: 550px;
+     }
+     .banner-section{
+         display: flex;
+         max-width: 1200px;
+         margin: 0 auto;
+         flex-flow: row nowrap;
+         justify-content: space-between;
+         padding: 2em;
+     }
+     .banner-content{
+         max-width: 55%;
+     }
+     .banner-items{
+         margin: 2.75em 0;
+         
+     }
+      .over-section{
+         margin-left: 30%;
+     }
+     
+ }
+
+ @media (min-width:1200px){
+     html{
+         /* font-size: 1.5rem; */
+     }
+      .banner-content{
+         max-width: 50%;
+     }
+      .over-section{
+         margin-left: 35%;
+     }
+     ..banner-items{
+         margin: 3.75em 0;
+         
+     }
+     .banner-desc{
+         max-width: 300px;
+     }
+     
+
+ }
+
 
 
