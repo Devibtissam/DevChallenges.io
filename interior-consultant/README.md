@@ -8,11 +8,11 @@ Please update value in the {}
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://interior-consultant-devibtissam.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/Devibtissam/DevChallenges.io/tree/main/interior-consultant">
       Solution
     </a>
     <span> | </span>
