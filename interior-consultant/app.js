@@ -3,8 +3,10 @@ const toggleMenu = document.querySelector('.toggle-menu');
 const sideBar = document.querySelector('.display-sidebar');
 
 function displayNav() {
-  sideBar.classList.remove('close-menu');
-  sideBar.classList.add('display-menu');
+    sideBar.classList.remove('close-menu');
+  //   sideBar.classList.add('display-menu');
+  sideBar.classList.toggle('display-menu');
+
   const nav = document.createElement('ul');
   const closeBtn = document.createElement('i');
   closeBtn.className = 'ri-close-line';
@@ -21,7 +23,9 @@ function displayNav() {
 
   closeBtn.addEventListener('click', () => {
     sideBar.classList.remove('display-menu');
-    sideBar.classList.add('close-menu');
+    // sideBar.classList.add('close-menu');
+    sideBar.classList.toggle('close-menu');
+
     nav.remove();
     closeBtn.remove();
   });

@@ -93,6 +93,7 @@ span{
     top: 0;
     right: 0;
     padding: 2em;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 .close-menu{
