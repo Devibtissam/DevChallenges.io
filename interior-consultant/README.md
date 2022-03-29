@@ -1,4 +1,3 @@
-Please update value in the {} 
 
 <h1 align="center">Interior consultant</h1>
 
