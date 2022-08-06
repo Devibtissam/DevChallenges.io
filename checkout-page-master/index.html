@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <!-- icons -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+   <main class="container">
+    <h1>Checkout</h1>
+    <div class="main-contents d-flex">
+      <!-- products list start -->
+      <aside class="products-cart">
+        <!-- product items start -->
+        <div class="procuct-items d-flex">
+          <picture class="product-img">
+            <img src="./photo1.png" alt="product image">
+          </picture>
+          <div class="product-detail">
+            <h3 class="product-title">Vintage Backbag</h3>
+            <p class="product-price">$54.99 <del>$94.99</del></p>
+            <div class="count-box d-flex">
+              <button class="material-symbols-outlined">add</button>
+              <span>1</span>
+              <button class="material-symbols-outlined">remove</button>
+            </div>
+          </div>
+        </div>
+        <!-- product items end -->
+
+        <!-- product items start -->
+        <div class="procuct-items d-flex">
+          <picture class="product-img">
+            <img src="./photo2.png" alt="product image">
+          </picture>
+          <div class="product-detail">
+            <h3 class="product-title">Levi Shoes</h3>
+            <p class="product-price">$54.99<del>$95.99</del></p>
+            <div class="count-box d-flex">
+              <button class="material-symbols-outlined">add</button>
+              <span>1</span>
+              <button class="material-symbols-outlined">remove</button>
+            </div>
+          </div>
+        </div>
+        <!-- product items end -->
+
+        <footer>
+          <ul>
+            <li class="d-flex">
+              <h3>Shipping</h3>
+              <p>$19</p>
+            </li>
+            <li class="d-flex">
+              <h3>Total</h3>
+              <p>$148.98</p>
+            </li>
+          </ul>
+        </footer>
+      </aside>
+      <!-- products list end -->
+
+      <!-- products informations start -->
+      <section class="checkout-infos">
+        <form action="#" method = "POST">
+          <h2>Contact infomation</h2>
+          <div class="input-field">
+            <label for="email">Email</label>
+            <i class="material-symbols-outlined">
+              mail</i>
+            <input type="text" name="email" id="email" placeholder="Enter your email">
+          </div>
+
+          <div class="input-field">
+            <label for="phone">Phone</label>
+            <i class="material-symbols-outlined">
+              call</i>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone">
+          </div>
+          <h2>Shipping address</h2>
+          <div class="input-field">
+            <label for="fullName">Full name</label>
+            <i class="material-symbols-outlined">
+              person</i>
+            <input type="text" name="fullName" id="fullName" value="Rodney Cotton">
+          </div>
+
+          <div class="input-field">
+            <label for="address">Address </label>
+            <i class="material-symbols-outlined">
+              home</i>
+            <input type="text" name="address" id="address" placeholder="Your address..">
+          </div>
+
+          <div class="input-field">
+            <label for="City">City </label>
+            <i class="material-symbols-outlined">
+              apartment</i>
+            <input type="text" name="City" id="City" placeholder="Your City..">
+          </div> 
+
+          <div class="input-field">
+            <div class="country-input">
+              <div class="input-field">
+                <label for="Country">Country </label>
+                <i class="material-symbols-outlined">
+                  apartment</i>
+                  <select name="Country" id="Country">
+                    <option value="Your country.." selected disabled>Your country..</option>
+                    <option value="Casablanca">Casablanca</option>
+                    <option value="Asfi">Asfi</option>
+                    <option value="El-Jadida">El-Jadida</option>
+                  </select>
+              </div>
+            </div>
+            <div class="postale-code-input">
+              <div class="input-field">
+                <label for="Postal-code">Postal code </label>
+                <i class="material-symbols-outlined">
+                  apartment</i>
+                <input type="text" name="Postal-code" id="Postal-code" placeholder="Your Postal code..">
+              </div>
+            </div>
+          </div>
+          <div class="input-field">
+            <input type="checkbox" name="check" id="check">
+          <label for="check">Save this information for next time</label>
+          </div>
+          
+          <div class="input-field">
+            <button type="submit">Continue</button>
+          </div>
+        </form>
+  
+      </section>
+      <!-- products informations end -->
+
+    </div>
+   
+   </main>
+
+   <footer><p>created by <a href="https://github.com/Devibtissam">ibtissam</a> - devChallenges.io</p></footer>
+  </body>
+</html>
