@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root{
+
+    --baseFont : 1rem;
+    --fontFamily: 'Montserrat', sans-serif;
+    --fontWeight : 600;
+    --line-height: 1.5;
+    --mainBlack: #000000;
+    --mainWhite:#ffff;
+    --gray1:#4E5150;
+    --gray2:#A9A9A9;
+    --gray3:#E5E5E5;
+    --columns: 4;
+    --width: 4;
+    --initialBasis : calc(var(--width) / var(--columns) * 100%);
+    
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fontFamily);
+    font-weight: var(--fontWeight);
+    font-size: var(--baseFont);
+    color: var(--mainBlack);
+    line-height: var(--line-height);
+    text-align: center;
+    min-height: 100vh;
+
+}
+/* general style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+svg{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+input,
+button{
+    outline: none;
+    border: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 1.100625rem auto;
+}
+
+/* header section - profile image  */
+header section div.profile-picture{
+    width: 141.55px;
+    margin: auto;
+    padding: 2.5625rem 0 0.75rem 0;
+}
+
+header section div.profile-picture img{
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+header section div.profile-picture h1{
+    font-size: 0.875rem;
+    color: var(--gray1);
+}
+
+header section div.profile-picture p {
+    font-size: 0.625rem;
+    color: var(--gray2);
+}
+
+header section div.profile-infos{
+    /* background-color: red; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header section div.profile-infos .profile-info-item{
+    flex-basis: 4.785rem;
+    background-color: var(--gray3);
+    padding: 0.625em 0.9375em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+header section div.profile-infos .profile-info-item h2,
+header section div.profile-infos .profile-info-item p {
+    font-size: 0.75rem;
+
+}
+header section div.profile-infos .profile-info-item h2{
+
+    color: var(--gray1);
+}
+header section div.profile-infos .profile-info-item p{
+    color: var(--gray2);
+}
+
+/* main section - profile picture  */
+
+main section.section-profile-pictures ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    align-content: center;
+    padding: 1rem 1rem 2.75rem 1rem;
+}
+
+main section.section-profile-pictures ul li picture img{
+    height: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+main section.section-profile-pictures ul li:nth-of-type(2){
+    /* background-color: palegoldenrod; */
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+main section.section-profile-pictures ul li:nth-of-type(3){
+    grid-column: span 2;
+}
+
+main section.section-profile-pictures ul li:nth-of-type(4){
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+
+footer p {
+    font-size: 0.875rem;
+    color: var(--gray2);
+}
+
+
+/* Media Query for Tablet & Desktop Devices */
+
+@media screen and (min-width:750px) {
+    header section div.profile-picture h1{
+        font-size: 1rem;
+    }
+
+    header section div.profile-picture p,
+    header section div.profile-infos .profile-info-item p{
+        font-size: 0.875rem;
+    }
+
+header section div.profile-infos .profile-info-item h2{
+    font-size: 1.125rem;
+}
+
+header section div.profile-infos .profile-info-item{
+    padding: 0.625em 2em;
+}
+
+    
+}
