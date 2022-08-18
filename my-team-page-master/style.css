@@ -12,7 +12,8 @@
   --fs-200: 0.75rem; /*12px*/
   --fs-300: 0.875rem; /*14px*/
   --fs-400: 1.125rem; /*18px*/
-  --fs-500: 2.25rem; /*36px*/
+  --fs-500: 2rem; /*32px*/
+  --fs-600: 2.25rem; /*36px*/
 }
 
 /* Utility Classes */
@@ -138,12 +139,13 @@ main {
   padding: 5vw 0;
 }
 
-main figure:nth-child(even) {
-  margin-top: 4rem;
-}
 main figure {
   /* border: 1px solid red; */
   position: relative;
+}
+
+main figure h3 {
+  margin-top: 0.5rem;
 }
 
 main figure figcaption {
@@ -161,9 +163,52 @@ main figure figcaption {
   letter-spacing: 2px;
 }
 
+@media (min-width: 368px) {
+  main figure:nth-child(even) {
+    margin-top: 4rem;
+  }
+}
+
+
+@media (min-width:650px){
+    header{
+        display: grid;
+         grid-auto-flow: column;
+         grid-auto-columns: 45% ;
+         gap: 5vw;
+    }
+    h1{
+        line-height: 1;
+    }
+    p{
+        max-width: 400px ;
+    }
+}
+
+@media (min-width:850px){
+    main{
+     grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
+    }
+}
+
+@media (min-width:1280px){
+   body{
+    max-width: 1000px;
+   }
+   main{
+    padding: 1vw;
+   }
+
+   main figure:nth-of-type(5){
+    margin-top: calc(4rem * 2);
+   }
+  
+}
+
 footer {
   text-align: center;
   font-size: var(--fs-100);
   font-weight: var(--fw-bold);
   letter-spacing: 2px;
+  margin-top: 3rem;
 }
